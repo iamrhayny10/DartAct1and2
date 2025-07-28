@@ -1,0 +1,20 @@
+void main() {
+  // Step 1: Declare greeting and user
+  String greeting = "Welcome";
+  String user = "Alice";
+
+  // Step 2: Print using string interpolation
+  print('$greeting, $user!');  // Output: Welcome, Alice!
+
+  // Step 3: Use dynamic variable for user
+  dynamic newUser = 25;
+
+  // Step 4: Print with new dynamic value
+  print('$greeting, $newUser!');  // Output: Welcome, 25!
+
+//Ang dynamic na variable, kaya niyang magpalit-palit ng type (halimbawa, mula string to int) kasi hindi agad chine-check ni Dart kung anong type siya habang ginagawa pa lang yung code. Sa takbo na ng program (runtime) niya lang ito chine-check, kaya hindi siya nagkaka-error kahit mag-iba yung value o type.
+
+
+}
+
+
